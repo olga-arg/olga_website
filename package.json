@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "domain": "cp CNAME dist/",
     "test": "vite test",
     "preview": "vite preview"
   },
