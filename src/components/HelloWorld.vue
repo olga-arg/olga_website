@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { Collapse } from 'flowbite'
 
 defineProps({
   msg: String,
