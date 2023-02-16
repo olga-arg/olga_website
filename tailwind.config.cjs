@@ -7,6 +7,14 @@ module.exports = {
     fontFamily: {
       sans: ['Rubik', 'system-ui', 'sans-serif'],
     },
+    colors: {
+      white: '#FFFFFF',
+      pink: '#DE848B',
+      blue: '#1C2E3D',
+      green: '#62948F',
+      gray: '#ECEBED',
+      gray_hover: '#848484',
+    },
   },
   variants: {
     extend: {},
