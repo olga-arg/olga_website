@@ -118,22 +118,22 @@ export default {
   setup() {
     const swiperTextBase = ref([
       {
-        image: 'src/assets/control.svg',
+        image: '/control.svg',
       },
       {
-        image: 'src/assets/pagos.svg',
+        image: '/pagos.svg',
       },
       {
-        image: 'src/assets/rastreo.svg',
+        image: '/rastreo.svg',
       },
       {
-        image: 'src/assets/recoleccion.svg',
+        image: '/recoleccion.svg',
       },
       {
-        image: 'src/assets/contabilizar.svg',
+        image: '/contabilizar.svg',
       },
       {
-        image: 'src/assets/exportar.svg',
+        image: '/exportar.svg',
       },
     ])
     return { modules: [Autoplay, Pagination], swiperTextBase }
