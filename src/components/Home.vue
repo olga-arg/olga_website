@@ -3,7 +3,7 @@
     <div class="container flex items-center justify-between mx-auto z-[1] relative">
       <div className="flex ml-auto sm:ml-0">
         <a href="/" class="flex items-center pr-20">
-          <img src="../assets/olgalogo_pink.svg" class="h-12 mr-3" alt="Flowbite Logo" />
+          <img src="../assets/olgalogo_pink.svg" class="h-12 mr-3" alt="Olga Logo" />
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
