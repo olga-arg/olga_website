@@ -11,7 +11,7 @@
               <router-link to="/como-funciona" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Cómo funciona</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">¿Por qué?</a>
+              <router-link to="/por-que" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">¿Por qué?</router-link>
             </li>
             <li>
               <a href="#" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Nosotros</a>
