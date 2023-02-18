@@ -17,7 +17,7 @@
               <router-link to="/precios" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Precios</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Contacto</a>
+              <router-link to="/contacto" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Contacto</router-link>
             </li>
           </ul>
         </div>

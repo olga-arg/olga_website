@@ -17,7 +17,7 @@
               <router-link to="/precios" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Precios</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Contacto</a>
+              <router-link to="/contacto" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Contacto</router-link>
             </li>
           </ul>
         </div>
@@ -174,10 +174,10 @@
     </p>
     <div className="flex w-72 justify-between">
       <div className="w-32 h-12 bg-blue rounded-lg flex items-center justify-center">
-        <p className="text-pink text-center font-bold text-md">Pedir Demo</p>
+        <a href="#contacto" className="text-pink text-center font-bold text-md">Pedir Demo</a>
       </div>
       <div className="w-32 h-12 border-blue border-2 rounded-lg flex items-center justify-center">
-        <p className="text-blue text-center font-bold text-md">Probar</p>
+        <a href="#contacto" className="text-blue text-center font-bold text-md">Probar</a>
       </div>
     </div>
   </div>

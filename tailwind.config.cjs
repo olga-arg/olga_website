@@ -14,6 +14,7 @@ module.exports = {
       green: '#62948F',
       gray: '#ECEBED',
       gray_hover: '#848484',
+      error: '#FF0000',
     },
   },
   variants: {
