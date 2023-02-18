@@ -8,16 +8,16 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
             <li>
-              <router-link to="/como-funciona" class="block py-2 pl-3 pr-4 text-black rounded md:p-0 hover:text-gray_hover">Cómo funciona</router-link>
+              <router-link to="/como-funciona" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Cómo funciona</router-link>
             </li>
             <li>
-              <router-link to="/por-que" class="block py-2 pl-3 pr-4 text-black rounded md:p-0 hover:text-gray_hover">¿Por qué?</router-link>
+              <router-link to="/por-que" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">¿Por qué?</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-black rounded md:p-0 hover:text-gray_hover">Nosotros</a>
+              <router-link to="/precios" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Precios</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-black rounded md:p-0 hover:text-gray_hover">Contacto</a>
+              <a href="#" class="block py-2 pl-3 pr-4 text-blue rounded md:p-0 hover:text-gray_hover">Contacto</a>
             </li>
           </ul>
         </div>
@@ -73,12 +73,12 @@
       </div>
       <div className="flex flex-col ml-20">
         <div className="flex flex-col my-10">
-          <img className="w-10 h-10" src="../assets/check.svg">
+          <img className="w-10 h-10" src="../assets/check.svg" />
           <p className="font-medium text-lg my-3">Aprobación de gastos</p>
           <p className="font-light">Aproba (o denega) gastos de tu equipo en segundos.</p>
         </div>
         <div className="flex flex-col my-10">
-          <img className="w-10 h-10" src="../assets/eye.svg">
+          <img className="w-10 h-10" src="../assets/eye.svg" />
           <p className="font-medium text-lg my-3">Rastrea gastos de manera fácil</p>
           <p className="font-light">
             Monitorea los gastos de tu equipo en tiempo real y esta<br />
@@ -86,7 +86,7 @@
           </p>
         </div>
         <div className="flex flex-col my-10">
-          <img className="w-10 h-10" src="../assets/power.svg">
+          <img className="w-10 h-10" src="../assets/power.svg" />
           <p className="font-medium text-lg my-3">Empodera a tu equipo</p>
           <p className="font-light">
             Empodera a tu equipo para que realice gastos de<br />
@@ -98,42 +98,56 @@
       </div>
     </div>
   </div>
+  <div className="h-screen w-screen flex items-center">
+    <div className="grid grid-cols-2 w-full items-center">
+      <div className="flex flex-col items-center">
+        <div className="flex mx-24 h-20 mb-10 items-center">
+          <img className="mr-8" src="../assets/him.svg" alt="him_profile" />
+          <p className="font-bold text-5xl">Por qué los <span className="text-pink">empleados</span> aman Olga</p>
+        </div>
+        <div className="bg-pink rounded-md w-max px-20 py-10 flex flex-col justify-center">
+          <div className="self-center">
+            <p className="text-white font-light text-xl mb-4">
+              "Nuestra app es muy práctica. Con la función<br />
+              de tomar una foto de tus recibos al pagar<br />
+              con tu tarjeta Olga, la gestión de tus gastos<br />
+              se vuelve más fácil y eficiente que nunca."
+            </p>
+            <div className="flex items-center">
+              <img src="../assets/sofia.png" alt="quote" className="mr-5" />
+              <div className="flex flex-col text-white">
+                <p className="font-light">Sofia Pino</p>
+                <p className="font-medium">Manager @Milo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col ml-20">
+        <div className="flex flex-col my-10">
+          <img className="w-10 h-10" src="../assets/card.svg" />
+          <p className="font-medium text-lg my-3">Tarjetas Convenientes</p>
+          <p className="font-light">Opciones de pago para cualquier situación.<br />Tarjetas virtuales para gastar en línea y tarjetas físicas<br />para el camino.</p>
+        </div>
+        <div className="flex flex-col my-10">
+          <img className="w-10 h-10" src="../assets/dolars.svg" />
+          <p className="font-medium text-lg my-3">Reembolsos rápidos</p>
+          <p className="font-light">¿Atrapado sin su tarjeta? Escanea tu recibo y envía una<br />solicitud de reembolso directamente desde la aplicación.</p>
+        </div>
+        <div className="flex flex-col my-10">
+          <img className="w-10 h-10" src="../assets/bills.svg" />
+          <p className="font-medium text-lg my-3">Pagos de facturas simples</p>
+          <p className="font-light">
+            No más cadenas de correo electrónico interminables.<br />Carga facturas de proveedores en segundos para su <br />validación y pago por parte del equipo financiero.
+          </p>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Pagination } from 'swiper'
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
 import { ref } from 'vue'
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    const swiperTextBase = ref([
-      {
-        image: '/control.png',
-      },
-      {
-        image: '/pagos.png',
-      },
-      {
-        image: '/rastreo.png',
-      },
-      {
-        image: '/recoleccion.png',
-      },
-      {
-        image: '/contabilizar.png',
-      },
-      {
-        image: '/exportar.png',
-      },
-    ])
-    return { modules: [Autoplay, Pagination], swiperTextBase }
-  },
-}
-const count = ref(0)
 </script>

@@ -14,7 +14,7 @@
               <router-link to="/por-que" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">¿Por qué?</router-link>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Nosotros</a>
+              <router-link to="/precios" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Precios</router-link>
             </li>
             <li>
               <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-gray_hover">Contacto</a>
@@ -109,6 +109,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Pagination } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+
 import { ref } from 'vue'
 export default {
   components: {
