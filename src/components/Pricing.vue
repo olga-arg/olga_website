@@ -1,4 +1,6 @@
 <template>
+  <PricesAlert v-show="showDiv1" @click="toggleDiv" />
+
   <nav class="bg-white border-gray-200 px-2 sm:px-4 py-8">
     <div class="container flex items-center justify-between mx-auto z-[1] relative">
       <div className="flex ml-auto sm:ml-0">
@@ -80,7 +82,7 @@
             <img src="../assets/elite.svg" className="" alt="Free" />
             <div className="flex flex-col items-center">
               <p className="font-medium text-sm text-gray_hover">Incluye 3 Usuarios</p>
-              <p className="font-light text-xs text-gray_hover">¿Necesitas más?</p>
+              <button @click="toggleDiv" className="font-light text-xs text-gray_hover">¿Necesitas más?</button>
             </div>
           </div>
           <div className="flex mx-10">
@@ -102,7 +104,7 @@
             <img src="../assets/pro.svg" className="" alt="Free" />
             <div className="flex flex-col items-center">
               <p className="font-medium text-sm text-gray_hover">Incluye 3 Usuarios</p>
-              <p className="font-light text-xs text-gray_hover">¿Necesitas más?</p>
+              <button @click="toggleDiv" className="font-light text-xs text-gray_hover">¿Necesitas más?</button>
             </div>
           </div>
           <div className="flex mx-10">
@@ -185,4 +187,20 @@
 
 <script>
 import { ref } from 'vue'
+import PricesAlert from '../components/PricesAlert.vue'
+export default {
+  data() {
+    return {
+      showDiv1: true,
+    }
+  },
+  methods: {
+    toggleDiv() {
+      this.showDiv1 = !this.showDiv1
+    },
+  },
+  components: {
+    PricesAlert,
+  },
+}
 </script>
