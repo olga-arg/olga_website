@@ -76,29 +76,29 @@
     <div className="bg-blue flex flex-col">
       <div className="self-center pt-20 text-4xl font-bold text-white">Toma el control de los gastos de tu empresa</div>
       <div className="self-center pt-20 flex">
-        <div className="text-pink text-md font-semibold px-5">Control</div>
-        <div className="text-md font-regular px-5 text-white">Pagos</div>
-        <div className="text-md font-regular px-5 text-white">Rastreo</div>
-        <div className="text-md font-regular px-5 text-white">Recolección</div>
-        <div className="text-md font-regular px-5 text-white">Contabilizar</div>
-        <div className="text-md font-regular px-5 text-white">Exportar</div>
+        <button v-if="this.currentSlide === 0" @click="handleSlideTo(0)" className="text-md font-semibold px-5 text-pink">Control</button>
+        <button v-else @click="handleSlideTo(0)" className="text-md font-semibold px-5 text-white">Control</button>
+        <button v-if="this.currentSlide === 1" @click="handleSlideTo(1)" className="text-md font-regular px-5 text-pink">Pagos</button>
+        <button v-else @click="handleSlideTo(1)" className="text-md font-regular px-5 text-white">Pagos</button>
+        <button v-if="this.currentSlide === 2" @click="handleSlideTo(2)" className="text-md font-regular px-5 text-pink">Rastreo</button>
+        <button v-else @click="handleSlideTo(2)" className="text-md font-regular px-5 text-white">Rastreo</button>
+        <button v-if="this.currentSlide === 3" @click="handleSlideTo(3)" className="text-md font-regular px-5 text-pink">Recolección</button>
+        <button v-else @click="handleSlideTo(3)" className="text-md font-regular px-5 text-white">Recolección</button>
+        <button v-if="this.currentSlide === 4" @click="handleSlideTo(4)" className="text-md font-regular px-5 text-pink">Contabilizar</button>
+        <button v-else @click="handleSlideTo(4)" className="text-md font-regular px-5 text-white">Contabilizar</button>
+        <button v-if="this.currentSlide === 5" @click="handleSlideTo(5)" className="text-md font-regular px-5 text-pink">Exportar</button>
+        <button v-else @click="handleSlideTo(5)" className="text-md font-regular px-5 text-white">Exportar</button>
       </div>
     </div>
     <div className="bg-blue flex justify-center">
       <div className="w-1/2 flex self-center my-10">
-        <Swiper
-          :modules="modules"
-          :space-between="30"
-          :loop="true"
-          :pagination="{ clickable: true }"
-          :autoplay="{ delay: 7000, disableOnInteraction: false, pauseOnMouseEnter: true }"
-        >
-          <swiper-slide v-for="swip in swiperTextBase">
+        <swiper :slides-per-view="1" @swiper="onSwiper">
+          <swiper-slide v-for="swip in swiperTextBase" @swiper="onSwiper">
             <div className="flex justify-center bg-blue">
               <img :src="swip.image" alt="image" />
             </div>
           </swiper-slide>
-        </Swiper>
+        </swiper>
       </div>
     </div>
   </div>
@@ -115,6 +115,22 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+  },
+  data() {
+    return {
+      swiper: null,
+      currentSlide: 0,
+    }
+  },
+  methods: {
+    onSwiper(swiper) {
+      this.swiper = swiper
+    },
+
+    handleSlideTo(n) {
+      this.swiper.slideTo(n)
+      this.currentSlide = n
+    },
   },
   setup() {
     const swiperTextBase = ref([
