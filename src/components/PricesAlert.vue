@@ -8,8 +8,8 @@
           del número de usuarios que se quieran añadir.
         </p>
         <div className="grid grid-cols-3 ">
-          <div>
-            <p>Usuarios adicionales</p>
+          <div className="w-max">
+            <p>Usuarios Adicionales</p>
             <div className="h-5"></div>
             <p>1-10</p>
             <div className="h-0.5 bg-gray_hover my-3"></div>
