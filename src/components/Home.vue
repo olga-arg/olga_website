@@ -23,10 +23,9 @@
         </div>
       </div>
       <div class="flex md:order-2 items-center">
-        <button type="button" class="text-blue font-light rounded-lg text-sm sm:px-10 px-2 py-2.5 text-center mr-3 md:mr-0">Login</button>
-        <button type="button" class="text-white bg-pink font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
-          Sign Up
-        </button>
+        <router-link to="/contacto" class="text-white bg-pink font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
+          Solicitar&nbsp;&nbsp;Demo
+        </router-link>
         <button
           data-collapse-toggle="navbar-cta"
           type="button"
@@ -79,14 +78,14 @@
             />
           </div>
           <button class="formkit-submit" data-form-type="action,subscribe">
-            <span class="px-5 py-3 text-sm font-medium text-center text-white bg-green rounded-lg cursor-pointer">Subscribe</span>
+            <span class="px-5 py-3 text-sm font-medium text-center text-white bg-green rounded-lg cursor-pointer">Contáctenme</span>
           </button>
         </div>
       </form>
-      <button className="flex items-center mt-10">
+      <router-link to="/como-funciona" className="flex items-center mt-10 w-max">
         <img className="w-12 h-12 mr-4" src="../assets/playvideo.svg" />
-        <p className="text-blue font-light text-sm">Cómo funciona Olga</p>
-      </button>
+        <text class="text-blue font-light text-sm">Cómo funciona Olga</text>
+      </router-link>
     </div>
     <div className="bg-white sm:w-1/2 sm:absolute sm:top-0 sm:right-0">
       <div className="sm:flex sm:justify-center sm:h-screen sm:relative">

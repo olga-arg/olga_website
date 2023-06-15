@@ -25,10 +25,9 @@
         </div>
       </div>
       <div class="flex md:order-2 items-center">
-        <button type="button" class="text-black font-light rounded-lg text-sm sm:px-10 px-2 py-2.5 text-center mr-3 md:mr-0">Login</button>
-        <button type="button" class="text-white bg-green font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
-          Sign Up
-        </button>
+        <router-link to="/contacto" class="text-white bg-green font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
+          Solicitar&nbsp;&nbsp;Demo
+        </router-link>
         <button
           data-collapse-toggle="navbar-cta"
           type="button"
@@ -174,12 +173,9 @@
       Pasate a un gasto<br />
       inteligente y controlado
     </p>
-    <div className="flex w-72 justify-between">
-      <div className="w-32 h-12 bg-blue rounded-lg flex items-center justify-center">
-        <a href="#contacto" className="text-pink text-center font-bold text-md">Pedir Demo</a>
-      </div>
-      <div className="w-32 h-12 border-blue border-2 rounded-lg flex items-center justify-center">
-        <a href="#contacto" className="text-blue text-center font-bold text-md">Probar</a>
+    <div className="flex w-72 justify-center">
+      <div className="w-full h-12 bg-blue rounded-lg flex items-center justify-center">
+        <a href="#contacto" className="text-pink text-center font-bold text-xl">Pedir Demo</a>
       </div>
     </div>
   </div>

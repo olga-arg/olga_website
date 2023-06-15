@@ -23,10 +23,9 @@
         </div>
       </div>
       <div class="flex md:order-2 items-center">
-        <button type="button" class="text-black font-light rounded-lg text-sm sm:px-10 px-2 py-2.5 text-center mr-3 md:mr-0">Login</button>
-        <button type="button" class="text-white bg-green font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
-          Sign Up
-        </button>
+        <router-link to="/contacto" class="text-white bg-green font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
+          Solicitar&nbsp;&nbsp;Demo
+        </router-link>
         <button
           data-collapse-toggle="navbar-cta"
           type="button"

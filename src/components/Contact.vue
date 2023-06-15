@@ -23,10 +23,6 @@
         </div>
       </div>
       <div class="flex md:order-2 items-center">
-        <button type="button" class="text-black font-light rounded-lg text-sm sm:px-10 px-2 py-2.5 text-center mr-3 md:mr-0">Login</button>
-        <button type="button" class="text-white bg-green font-medium rounded-lg text-xs px-5 py-2.5 text-center mr-3 md:mr-0 h-8 flex items-center whitespace-nowrap">
-          Sign Up
-        </button>
         <button
           data-collapse-toggle="navbar-cta"
           type="button"
@@ -71,7 +67,7 @@
           <div className="flex flex-wrap">
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label for="name" className="leading-7 text-sm text-blue"> Name * </label>
+                <label for="name" className="leading-7 text-sm text-blue"> Nombre </label>
                 <input
                   v-model="name"
                   required=""
@@ -84,8 +80,9 @@
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label className="leading-7 text-sm text-blue"> Apellido * </label>
+                <label className="leading-7 text-sm text-blue"> Apellido </label>
                 <input
+                  v-model="surname"
                   required=""
                   type="text"
                   id="surname"
@@ -96,7 +93,7 @@
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label for="company_email" className="leading-7 text-sm text-blue"> Email de Empresa * </label>
+                <label for="company_email" className="leading-7 text-sm text-blue"> Email de Empresa </label>
                 <input
                   v-model="company_email"
                   required=""
@@ -109,7 +106,7 @@
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label for="phone" className="leading-7 text-sm text-blue"> Numero de Telefono * </label>
+                <label for="phone" className="leading-7 text-sm text-blue"> Número de Telefono </label>
                 <input
                   v-model="phone"
                   required=""
@@ -122,7 +119,7 @@
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label for="company_name" className="leading-7 text-sm text-blue"> Nombre de la Empresa * </label>
+                <label for="company_name" className="leading-7 text-sm text-blue"> Nombre de la Empresa </label>
                 <input
                   v-model="company_name"
                   required=""
@@ -134,41 +131,31 @@
               </div>
             </div>
             <div className="p-2 w-1/2">
-              <div className="relative">
-                <label for="company_size" className="leading-7 text-sm text-blue"> Tamaño en la Empresa * </label>
-                <button
-                  data-dropdown-toggle="dropdown"
-                  class="inline-flex items-center justify-between w-full rounded border text-base outline-none text-gray_hover py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  type="button"
-                >
-                  <input id="company_size" name="company_size" v-model="selectedOption" className="hidden" />
-                  {{ selectedOption }}
-                  <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </button>
-
-                <!-- Dropdown menu -->
-                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 text-blue">
-                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                    <li>
-                      <a @click="choose('1-10')" class="w-full block px-4 py-2 hover:bg-gray">1-10</a>
-                    </li>
-                    <li>
-                      <a @click="choose('11-50')" class="w-full block px-4 py-2 hover:bg-gray">11-50</a>
-                    </li>
-                    <li>
-                      <a @click="choose('51-200')" class="w-full block px-4 py-2 hover:bg-gray">51-200</a>
-                    </li>
-                    <li>
-                      <a @click="choose('201-600')" class="w-full block px-4 py-2 hover:bg-gray">201-600</a>
-                    </li>
-                    <li>
-                      <a @click="choose('600+')" class="w-full block px-4 py-2 hover:bg-gray">600+</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <label for="company_size" className="leading-7 text-sm text-blue">Tamaño de Empresa (empleados)</label>
+              <AppDropdown>
+                <template slot="toggler">
+                  <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 rounded-lg bg-gray-300 text-gray-800 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current text-gray-700">
+                      <path d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path>
+                    </svg>
+                  </button>
+                </template>
+                <AppDropdownContent>
+                  <AppDropdownItem @click="choose('1-10')">1-10</AppDropdownItem>
+                  <AppDropdownItem @click="choose('11-50')">11-50</AppDropdownItem>
+                  <AppDropdownItem @click="choose('51-200')">51-200</AppDropdownItem>
+                  <AppDropdownItem @click="choose('201-600')">201-600</AppDropdownItem>
+                  <AppDropdownItem @click="choose('+600')">+600</AppDropdownItem>
+                </AppDropdownContent>
+                <input
+                  v-model="selectedOption"
+                  required=""
+                  type="text"
+                  id="company_size"
+                  name="company_size"
+                  className="w-full rounded border border-gray_hover text-base outline-none text-blue py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </AppDropdown>
             </div>
             <div v-if="errors.length">
               <ul>
@@ -189,33 +176,11 @@
 </template>
 
 <script>
-import { Dropdown } from 'flowbite'
 import emailjs from '@emailjs/browser'
+import AppDropdown from './AppDropdown.vue'
+import AppDropdownContent from './AppDropdownContent.vue'
+import AppDropdownItem from './AppDropdownItem.vue'
 
-const $targetEl = document.getElementById('dropdownMenu')
-
-// set the element that trigger the dropdown menu on click
-const $triggerEl = document.getElementById('dropdownButton')
-
-// options with default values
-const options = {
-  placement: 'bottom',
-  triggerType: 'click',
-  offsetSkidding: 0,
-  offsetDistance: 10,
-  delay: 300,
-  onHide: () => {
-    console.log('dropdown has been hidden')
-  },
-  onShow: () => {
-    console.log('dropdown has been shown')
-  },
-  onToggle: () => {
-    console.log('dropdown has been toggled')
-  },
-}
-
-const dropdown = new Dropdown($targetEl, $triggerEl, options)
 export default {
   name: 'ContactForm',
   methods: {
@@ -231,8 +196,7 @@ export default {
         this.errors = []
       }
       let form = this.$refs.getEmailForm
-
-      emailjs.sendForm('service_zz4sd1l', 'template_007w7tl', form, '9lz3qSqREbKpFbm1q').then(
+      emailjs.sendForm('service_ui207oi', 'template_007w7tl', form, '9lz3qSqREbKpFbm1q').then(
         (result) => {
           console.log('SUCCESS!', result.text)
         },
@@ -248,7 +212,11 @@ export default {
       this.selectedOption = 'Seleccionar'
     },
   },
-  components: {},
+  components: {
+    AppDropdown,
+    AppDropdownContent,
+    AppDropdownItem,
+  },
   data() {
     return {
       errors: [],
