@@ -102,7 +102,6 @@ import emailjs from '@emailjs/browser'
 
 export default {
   name: 'App',
-
   methods: {
     onSubmit() {
       let form = this.$refs.getEmailForm
