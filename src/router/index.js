@@ -5,6 +5,8 @@ import Why from '../components/Why.vue'
 import Pricing from '../components/Pricing.vue'
 import Contact from '../components/Contact.vue'
 import PageNotFound from '../components/PageNotFound.vue'
+import Policy from '../components/Policy.vue'
+
 const router = createRouter({
   history: createWebHashHistory(),
   mode: 'hash',
@@ -15,8 +17,8 @@ const router = createRouter({
     { path: '/precios', component: Pricing, hash: 'precios' },
     { path: '/contacto', component: Contact, hash: 'contacto' },
     { path: '/:pathMatch(.*)*', component: PageNotFound },
+    { path: '/policy', component: Policy },
   ],
 })
 
 export default router
-
