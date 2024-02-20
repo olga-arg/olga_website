@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Rubik', 'system-ui', 'sans-serif'],
+      // sans: ['Rubik', 'system-ui', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
+      seriguela: ['seriguela', 'sans-serif'],
     },
     colors: {
       white: '#FFFFFF',
