@@ -9,15 +9,6 @@ module.exports = {
       montserrat: ['Montserrat', 'sans-serif'],
       seriguela: ['seriguela', 'sans-serif'],
     },
-    colors: {
-      white: '#FFFFFF',
-      pink: '#DE848B',
-      blue: '#1C2E3D',
-      green: '#62948F',
-      gray: '#ECEBED',
-      gray_hover: '#848484',
-      error: '#FF0000',
-    },
   },
   variants: {
     extend: {},

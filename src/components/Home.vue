@@ -46,11 +46,16 @@
       </footer>
     </div>
   </div>
+  <LandingContent></LandingContent>
 </template>
 
 <script>
+import LandingContent from './LandingContent.vue'
 export default {
   name: 'App',
   methods: {},
+  components: {
+    LandingContent,
+  },
 }
 </script>

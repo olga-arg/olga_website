@@ -1,6 +1,6 @@
 <template>
-  <div className=" bg-blue">
-    <img src="../assets/404.gif" className="object-fill w-screen" />
+  <div class="flex items-center justify-center h-screen">
+    <img src="../assets/404.gif" className="h-screen" />
   </div>
 </template>
 
