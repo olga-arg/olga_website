@@ -7,12 +7,12 @@
 @font-face {
   font-family: 'Seriguela';
   font-weight: bold;
-  src: url('src/assets/fonts/Seriguela-Bold.otf');
+  src: url('/src/assets/fonts/Seriguela-Bold.otf');
 }
 @font-face {
   font-family: 'Seriguela';
   font-weight: medium;
-  src: url('src/assets/fonts/Seriguela-Medium.otf');
+  src: url('/src/assets/fonts/Seriguela-Medium.otf');
 }
 @layer base {
   input[type='number']::-webkit-inner-spin-button,

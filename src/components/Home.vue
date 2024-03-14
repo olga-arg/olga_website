@@ -1,5 +1,5 @@
 <template>
-  <div class="font-montserrat bg-no-repeat text-center h-screen bg-cover bg-center" style="background-image: url('/src/assets/wom.png')">
+  <div class="font-montserrat bg-no-repeat text-center h-screen bg-cover bg-center bg-hero-img">
     <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.1)">
       <header class="px-5 sm:px-10 pt-7 items-center">
         <div class="flex justify-between items-center">
@@ -44,7 +44,7 @@
       </body>
       <footer class="flex w-screen justify-center text-xs sm:text-base text-white mt-72 sm:mt-36 flex-col items-center">
         <a>SOLICITA LA DEMO Y COMENZÁ YA MISMO<br />A DISFRUTAR DEL PROCESO DE <br /><span class="italic">RENDICIÓN DE GASTOS</span></a>
-        <image src="/src/assets/arrow_down.png" class="w-6 mt-4" />
+        <img src="/src/assets/arrow_down.png" class="w-6 mt-4" />
       </footer>
     </div>
   </div>
