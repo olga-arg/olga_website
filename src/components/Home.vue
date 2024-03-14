@@ -1,12 +1,14 @@
 <template>
-  <div class="font-montserrat relative overflow-hidden bg-no-repeat text-center h-screen bg-cover bg-center" style="background-image: url('/src/assets/wom.png')">
+  <div class="font-montserrat bg-no-repeat text-center h-screen bg-cover bg-center" style="background-image: url('/src/assets/wom.png')">
     <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.1)">
       <header class="px-5 sm:px-10 pt-7 items-center">
         <div class="flex justify-between items-center">
-          <image src="/src/assets/olga_pin.png" alt="logo" class="w-24" />
-          <div class="border h-max px-4 rounded-full text-white flex py-1">
-            <a class="text-white text-xs sm:text-base">DEMO</a>
-          </div>
+          <img src="/src/assets/olga_pin.png" alt="logo" class="w-24" />
+          <router-link to="/demo">
+            <div class="border h-max px-4 rounded-full text-white flex py-1 cursor-pointer">
+              <a class="text-white text-xs sm:text-base" href="#demo">DEMO</a>
+            </div>
+          </router-link>
         </div>
         <div class="flex text-white mt-10 text-[10px] sm:text-lg justify-between gap-10">
           <div class="flex flex-col text-left min-w-max">
@@ -30,12 +32,12 @@
       </header>
       <body class="flex min-h-screen">
         <div class="flex mt-16 sm:mt-0 items-center text-white justify-center gap-2">
-          <h2 class="text-6xl sm:text-[200px] font-seriguela mt-4">RENDIR</h2>
+          <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold mt-4">RENDIR</h2>
           <div class="flex flex-col">
-            <h2 class="text-6xl sm:text-[200px] font-seriguela">GASTOS HECHO</h2>
+            <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold">GASTOS HECHO</h2>
             <div class="flex items-center gap-1">
               <img src="/src/assets/ticket_xl.png" class="h-10 sm:h-36 sm:mt-3" />
-              <h2 class="text-6xl sm:text-[200px] font-seriguela">SIMPLE</h2>
+              <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold">SIMPLE</h2>
             </div>
           </div>
         </div>

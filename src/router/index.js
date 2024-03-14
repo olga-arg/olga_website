@@ -12,6 +12,8 @@ const router = createRouter({
   mode: 'hash',
   routes: [
     { path: '/', component: Home, hash: '' },
+    { path: '/demo', component: Contact, hash: 'demo' },
+
     // { path: '/como-funciona', component: HowItWork, hash: 'como-funciona' },
     // { path: '/por-que', component: Why, hash: 'por-que' },
     // { path: '/precios', component: Pricing, hash: 'precios' },
