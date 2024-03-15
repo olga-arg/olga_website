@@ -89,42 +89,42 @@
     </div>
     <div class="flex flex-col w-screen relative">
       <img src="../assets/arrow.png" alt="landing" class="w-10 self-center" />
-      <div class="grid grid-cols-3 justify-items-center">
-        <img src="../assets/ticket_left.png" alt="landing" class="w-28" />
+      <div class="sm:grid sm:grid-cols-3 justify-items-center">
+        <img src="../assets/ticket_left.png" alt="landing" class="w-20 pl-5 sm:pl-0 sm:w-28" />
         <div class="relative flex flex-col justify-center items-center mt-10">
-          <img src="../assets/background_text.png" alt="landing" class="h-20" />
+          <img src="../assets/background_text.png" alt="landing" class="w-11/12 sm:h-20" />
           <div class="absolute flex">
-            <a class="text-white text-5xl font-bold">Probalo por 1 mes</a>
+            <a class="text-white text-4xl sm:text-5xl font-bold">Probalo por 1 mes</a>
           </div>
         </div>
         <div></div>
       </div>
       <a class="self-center pt-1 font-light text-lg">Nos importan los gastos. No las excusas.</a>
-      <div class="grid grid-cols-7 justify-items-center pt-10">
+      <div class="sm:grid sm:grid-cols-7 sm:justify-items-center pt-10 flex items-center justify-between">
         <div></div>
         <div class="flex flex-col col-span-2">
-          <a class="pl-14 text-2xl font-bold">Registrate</a>
-          <img src="../assets/first_half_timeline.png" alt="landing" class="w-3/4 self-end" />
+          <a class="sm:pl-14 text-xs sm:text-2xl font-bold">Registrate</a>
+          <img src="../assets/first_half_timeline.png" alt="landing" class="w-0 sm:w-3/4 self-end" />
         </div>
         <div>
-          <a class="text-2xl font-bold">
+          <a class="text-xs sm:text-2xl font-bold">
             Invita a tus<br />
             empleados
           </a>
         </div>
-        <div class="flex flex-col col-span-2 w-full">
-          <img src="../assets/arrow_timeline.png" alt="landing" class="h-32 absolute left-3/4 top-40" />
-          <a class="pr-20 text-2xl font-bold text-end">Rendi gastos</a>
-          <img src="../assets/second_half_timeline.png" alt="landing" class="w-7/12" />
+        <div class="flex flex-col col-span-2 sm:w-full">
+          <img src="../assets/arrow_timeline.png" alt="landing" class="sm:h-32 absolute w-0 sm:left-3/4 top-40" />
+          <a class="sm:pr-20 text-xs sm:text-2xl font-bold sm:text-end">Rendi gastos</a>
+          <img src="../assets/second_half_timeline.png" alt="landing" class="w-0 sm:w-7/12" />
         </div>
         <div></div>
       </div>
+      <img src="../assets/ticket_right.png" alt="landing" class="sm:w-28 w-20 self-end mr-5 sm:absolute sm:right-40" />
       <div class="flex justify-center relative">
-        <a class="text-center text-xl py-14"
-          >Alivia las tareas administrativas y obtén una visibilidad completa de los gastos de tu <br />
-          empresa. Con Olga, puedes automatizar y simplificar la gestión de gastos en solo 5 minutos.</a
+        <a class="text-center text-xs sm:text-xl px-10 sm:px-0 py-14"
+          >Alivia las tareas administrativas y obtén una visibilidad completa de los gastos de tu empresa.<br />
+          Con Olga, puedes automatizar y simplificar la gestión de gastos en solo 5 minutos.</a
         >
-        <img src="../assets/ticket_right.png" alt="landing" class="w-28 absolute -bottom-10 right-40" />
       </div>
       <a href="#demo" class="self-center">
         <button class="bg-[#F6D7EC] w-max px-6 py-6 h-10 text-xl rounded-full font-semibold items-center flex hover:border hover:border-[#1e1e1e]">COMENZAR PRUEBA</button>

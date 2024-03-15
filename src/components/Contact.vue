@@ -3,12 +3,12 @@
     <div class="flex">
       <div class="flex items-center text-[#142C1D]">
         <div class="flex flex-col">
-          <h2 class="text-7xl sm:text-[217px] font-seriguela font-bold">(PEDI TU DEMO)</h2>
+          <h2 class="text-7xl sm:text-[217px] font-seriguela font-bold pb-20 sm:pb-0">(PEDI TU DEMO)</h2>
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-2 font-seriguela">
-      <a class="absolute text-7xl bottom-0 font-medium pb-7"
+    <div class="sm:grid sm:grid-cols-2 font-seriguela">
+      <a class="absolute text-5xl sm:text-7xl bottom-0 font-medium pb-7"
         >CONOCE COMO CONTROLAR GASTOS <br />
         SIN ESFUERZO Y AUMENTA LA <br />
         EFICIENCIA EN TU EMPRESA.</a
@@ -17,20 +17,25 @@
       <div class="flex flex-col pt-10 gap-4">
         <div class="flex flex-col">
           <a>(QUIEN SOS?)</a>
-          <input v-model="name" class="text-[#BCB5AD] placeholder-[#BCB5AD] text-8xl bg-[#EDE1D8] focus:outline-none" type="text" placeholder="NOMBRE Y APELLIDO" />
+          <input v-model="name" class="text-[#BCB5AD] placeholder-[#BCB5AD] text-4xl sm:text-8xl bg-[#EDE1D8] focus:outline-none" type="text" placeholder="NOMBRE Y APELLIDO" />
           <div class="h-0.5 w-full bg-[#142C1D]"></div>
         </div>
         <div class="flex flex-col">
           <a>(COMO TE LLAMO?)</a>
-          <input v-model="phone" class="text-[#BCB5AD] placeholder-[#BCB5AD] text-8xl bg-[#EDE1D8] focus:outline-none" type="number" placeholder="CELULAR" />
+          <input v-model="phone" class="text-[#BCB5AD] placeholder-[#BCB5AD] text-4xl sm:text-8xl bg-[#EDE1D8] focus:outline-none" type="number" placeholder="CELULAR" />
           <div class="h-0.5 w-full bg-[#142C1D]"></div>
         </div>
         <div class="flex flex-col">
           <a>(COMO TE CONTACTO?)</a>
-          <input v-model="company_email" class="text-[#BCB5AD] placeholder-[#BCB5AD] text-8xl bg-[#EDE1D8] focus:outline-none" type="mail" placeholder="EMAIL DE EMPRESA" />
+          <input
+            v-model="company_email"
+            class="text-[#BCB5AD] placeholder-[#BCB5AD] text-4xl sm:text-8xl bg-[#EDE1D8] focus:outline-none"
+            type="mail"
+            placeholder="EMAIL DE EMPRESA"
+          />
           <div class="h-0.5 w-full bg-[#142C1D]"></div>
         </div>
-        <a v-on:click="onSubmit" class="transition hover:underline cursor-pointer absolute bottom-0 right-0 pr-8 pb-8 text-end text-8xl">SOLICITAR</a>
+        <a v-on:click="onSubmit" class="transition hover:underline cursor-pointer sm:absolute bottom-0 right-0 sm:pr-8 pb-8 text-end text-6xl sm:text-8xl">SOLICITAR</a>
       </div>
     </div>
   </div>
