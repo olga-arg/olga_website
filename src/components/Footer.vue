@@ -36,7 +36,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://olga.lat/" class="hover:underline">Olga</a>. All Rights Reserved. </span>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://olga.lat/" class="hover:underline">Olga</a>. All Rights Reserved. </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

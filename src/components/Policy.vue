@@ -78,7 +78,7 @@
     We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new
     Privacy Policy on this page.
   </p>
-  <p>This policy is effective as of 2023-08-06</p>
+  <p>This policy is effective as of 2024-08-06</p>
   <p><strong>Contact Us</strong></p>
   <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at hello@olga.lat.</p>
   <p>
