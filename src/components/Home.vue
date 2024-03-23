@@ -1,6 +1,6 @@
 <template>
-  <div class="font-montserrat bg-no-repeat text-center h-screen bg-cover bg-center bg-hero-img">
-    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.1)">
+  <div class="font-montserrat bg-no-repeat text-center h-screen w-screen bg-cover bg-center bg-hero-img">
+    <div class="absolute h-screen bg-fixed w-screen" style="background-color: rgba(0, 0, 0, 0.1)">
       <header class="px-5 sm:px-10 pt-7 items-center">
         <div class="flex justify-between items-center">
           <img src="/src/assets/olga_pin.png" alt="logo" class="w-24" />

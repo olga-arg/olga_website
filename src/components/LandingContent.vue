@@ -1,55 +1,103 @@
 <template>
-  <div class="bg-[#F9F7F3] items-center flex flex-col">
-    <div class="sm:grid sm:grid-cols-3 flex flex-col gap-6 py-6 w-5/6">
+  <div class="bg-[#F9F7F3] items-center flex flex-col w-screen sm:pt-20">
+    <div class="sm:grid sm:grid-cols-3 flex flex-col sm:gap-6 py-6 w-7/12">
       <div class="rounded-xl">
         <img src="../assets/image00.png" class="rounded-xl" alt="" />
       </div>
-      <div class="col-span-2 bg-[#FFFFFF] rounded-xl flex flex-col py-4 sm:pt-14 pl-6">
-        <p class="text-xl sm:text-2xl font-semibold sm:font-normal mb-6 text-[#67ACB9]">01</p>
-        <p class="mb-3 text-2xl sm:text-4xl">Realiza un gasto</p>
+      <div class="col-span-2 rounded-xl flex flex-col py-4 sm:pt-14 sm:pl-6 sm:w-96">
+        <p class="text-sm font-semibold sm:font-normal text-[#6D7471]">PRIMERO</p>
+        <p class="mb-4 text-2xl sm:text-2xl">Realiza un gasto</p>
         <p class="text-lg">Sacale una foto al gasto, recibo o ticket directo desde la app movil de olga.</p>
       </div>
-      <div class="col-span-2 bg-[#FFFFFF] rounded-xl flex flex-col py-4 sm:pt-14 pl-6">
-        <p class="text-xl sm:text-2xl font-semibold sm:font-normal mb-6 text-[#67ACB9]">02</p>
-        <p class="mb-3 text-2xl sm:text-4xl">Aprobalo</p>
+      <div class="col-span-2 rounded-xl flex flex-col py-4 sm:pt-14 sm:pl-6 sm:w-96">
+        <p class="text-sm font-semibold sm:font-normal text-[#6D7471]">SEGUNDO</p>
+        <p class="mb-4 text-2xl sm:text-2xl">Aprobalo</p>
         <p class="text-lg">Los revisores pueden revisar y aprobar gastos de manera sencilla en tiempo real.</p>
       </div>
-      <div class="bg-pink-300 rounded-xl">
+      <div class="rounded-xl pb-10 sm:pb-0">
         <img src="../assets/image01.png" class="rounded-xl" alt="" />
       </div>
-      <div class="bg-pink-300 rounded-xl">
+      <div class="rounded-xl">
         <img src="../assets/image02.png" class="rounded-xl" alt="" />
       </div>
-      <div class="col-span-2 bg-[#FFFFFF] rounded-xl flex flex-col py-4 sm:pt-14 pl-6">
-        <p class="text-xl sm:text-2xl font-semibold sm:font-normal mb-6 text-[#67ACB9]">03</p>
-        <p class="mb-3 text-2xl sm:text-4xl">Controla y exporta tus gastos</p>
+      <div class="col-span-2 rounded-xl flex flex-col py-4 sm:pt-14 sm:pl-6 sm:w-96">
+        <p class="text-sm font-semibold sm:font-normal text-[#6D7471]">TERCERO</p>
+        <p class="mb-4 text-2xl sm:text-2xl">Controla y exporta tus gastos</p>
         <p class="text-lg">Exporta los gastos a tu sistema contable con un solo click.</p>
       </div>
     </div>
-    <div class="flex items-center justify-center">
-      <div class="rounded-xl bg-white items-center flex flex-col w-5/6 mx-6 pb-4">
-        <h1 class="text-2xl sm:text-4xl text-center py-10 font-semibold text-[#2B275C]">Todos tus gastos, un solo lugar.</h1>
-        <div class="sm:grid sm:grid-cols-3 flex flex-col gap-4 items-center sm:px-48">
-          <div class="bg-[#E6E6F6] rounded-xl flex flex-col w-5/6 h-5/6 items-center sm:px-1 pb-20 pt-5">
-            <p class="text-4xl text-black bg-[#CDCDEE] px-4 py-2 w-40 text-center rounded-full">$10,630</p>
-            <p class="text-center mt-4 text-xl">dolares ahorrados mensualmente</p>
-          </div>
-          <div class="bg-[#E6E6F6] rounded-xl flex flex-col w-5/6 h-5/6 items-center px-10 pb-20 pt-5">
-            <p class="text-4xl text-black bg-[#CDCDEE] px-4 py-2 rounded-full w-40 text-center">4.250</p>
-            <p class="text-center mt-4 text-xl">horas ahorradas anualmente por contadores</p>
-          </div>
-          <div class="bg-[#E6E6F6] rounded-xl flex flex-col w-5/6 sm:h-5/6 items-center px-10 sm:pb-20 pt-5">
-            <div class="flex w-40 rounded-full bg-[#CDCDEE] items-center px-4 py-2 justify-center gap-2">
-              <p class="text-4xl text-black text-center">10x</p>
-              <img src="../assets/fast.png" alt="10x" class="h-6" />
+    <div class="flex items-center justify-center sm:pt-20">
+      <div class="bg-[#F1D8EB] items-center flex flex-col sm:h-full h-screen w-screen sm:pb-36">
+        <h1 class="text-3xl sm:text-4xl text-center pt-20 pb-10 font-light text-[#222222]">Todos tus gastos, un solo lugar.</h1>
+        <div class="sm:grid sm:grid-cols-3 flex flex-col items-center w-full h-64 px-5 sm:px-48 gap-8 sm:gap-11">
+          <div class="bg-white rounded-md flex flex-col pt-2 w-full h-full px-7">
+            <p class="text-2xl text-[#222222] py-4">Gestión de Gastos</p>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Simplifica el seguimiento</p>
             </div>
-            <p class="text-center mt-4 text-xl">Rendicion de gastos mas rapidas</p>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Controla los gastos en tiempo real</p>
+            </div>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Automatiza los procesos de reembolso</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-md flex flex-col pt-2 pb-5 w-full h-full px-7">
+            <p class="text-2xl text-[#222222] py-4">Control Financiero</p>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Visibilidad completa de tus finanzas</p>
+            </div>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Supervisa y gestiona los presupuestos</p>
+            </div>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Simplifica la gestión de gastos de la empresa</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-md flex flex-col pt-2 pb-5 w-full h-full px-7">
+            <p class="text-2xl text-[#222222] py-4">Control de Gastos</p>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Monitorea y controla los gastos</p>
+            </div>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Establece límites de gastos por empleado</p>
+            </div>
+            <div class="flex gap-2 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 w-5 h-5 text-[#2B275C] rounded-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <p class="text-lg">Genera informes detallados de gastos</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <h1 class="text-2xl sm:text-4xl text-center py-10 font-semibold text-[#2B275C]">Gasta de manera inteligente en cada etapa de tu empresa.</h1>
-    <div class="flex flex-col sm:grid sm:grid-cols-2 w-5/6 gap-5 mb-5">
+    <h1 class="text-2xl sm:text-4xl text-center pt-20 pb-12 font-light text-[#2B275C]">Gasta de manera inteligente en cada etapa de tu empresa.</h1>
+    <div class="flex flex-col sm:grid sm:grid-cols-2 w-9/12 gap-5 mb-5">
       <div class="bg-[#EFEFEF] rounded-lg flex flex-col items-center py-4">
         <a class="text-lg font-medium">Obten un mayor control financiero</a>
         <a class="text-xs w-96 px-7 mt-2 font-light text-center"
@@ -63,7 +111,7 @@
         <img src="../assets/rec.png" alt="finance" class="mt-8 w-72 rounded-lg" />
       </div>
     </div>
-    <div class="flex flex-col sm:grid sm:grid-cols-3 w-5/6 gap-5">
+    <div class="flex flex-col sm:grid sm:grid-cols-3 w-9/12 gap-5">
       <div class="bg-[#EFEFEF] rounded-lg flex flex-col items-center py-4">
         <a class="text-lg font-medium">Automatiza y optimiza la contabilidad </a>
         <a class="text-xs w-96 px-7 mt-2 font-light text-center"
