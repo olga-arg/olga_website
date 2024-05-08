@@ -31,18 +31,17 @@
         </div>
       </header>
       <body class="flex min-h-screen">
-        <div class="flex mt-16 sm:mt-0 items-center text-white justify-center gap-2">
-          <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold mt-4">RENDIR</h2>
-          <div class="flex flex-col">
-            <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold">GASTOS HECHO</h2>
-            <div class="flex items-center gap-1">
-              <img src="/src/assets/ticket_xl.png" class="h-10 sm:h-36 sm:mt-3" />
-              <h2 class="text-6xl sm:text-[200px] font-seriguela font-bold">SIMPLE</h2>
-            </div>
+        <div class="flex mt-16 sm:mt-0 text-white flex-col">
+          <div class="flex ml-8 sm:ml-40">
+            <h2 class="text-8xl sm:text-[220px] font-seriguela font-bold">RENDIR GASTOS</h2>
+          </div>
+          <div class="flex items-center justify-center gap-2 sm:gap-10 sm:mt-[-50px]">
+            <h2 class="text-8xl sm:text-[220px] font-seriguela font-bold">HECHO SIMPLE</h2>
+            <img src="/src/assets/ticket_xl.png" class="h-10 sm:h-36 sm:mt-3" />
           </div>
         </div>
       </body>
-      <footer class="flex w-screen justify-center text-xs sm:text-base text-white mt-72 sm:mt-36 flex-col items-center">
+      <footer class="flex w-screen justify-center text-xs sm:text-base text-white mt-96 sm:mt-28 flex-col items-center">
         <a>SOLICITA LA DEMO Y COMENZÁ YA MISMO<br />A DISFRUTAR DEL PROCESO DE <br /><span class="italic">RENDICIÓN DE GASTOS</span></a>
         <img src="/src/assets/arrow_down.png" class="w-6 mt-4" />
       </footer>

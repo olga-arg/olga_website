@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#F9F7F3] items-center flex flex-col w-screen sm:pt-20">
-    <div class="sm:grid sm:grid-cols-3 flex flex-col sm:gap-6 py-6 w-7/12">
+    <div class="sm:grid sm:grid-cols-3 flex flex-col sm:gap-6 py-6 w-9/12">
       <div class="rounded-xl">
         <img src="../assets/image00.png" class="rounded-xl" alt="" />
       </div>
