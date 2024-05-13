@@ -51,6 +51,10 @@ export default {
   name: 'ContactForm',
   methods: {
     onSubmit() {
+      gtag('event', 'click', {
+        event_category: 'demo',
+        event_label: 'demo_click',
+      })
       console.log('name: ', this.name, 'phone: ', this.phone, 'email: ', this.company_email)
       if (this.name === '' || this.phone === '' || this.company_email == '') {
         this.errors.push('Complete todos los campos')

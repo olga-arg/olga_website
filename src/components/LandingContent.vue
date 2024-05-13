@@ -174,7 +174,7 @@
           Con Olga, puedes automatizar y simplificar la gestión de gastos en solo 5 minutos.</a
         >
       </div>
-      <a href="#demo" class="self-center">
+      <a href="#demo" v-on:click="googleNotify" class="self-center">
         <button class="bg-[#F6D7EC] w-max px-6 py-6 h-10 text-xl rounded-full font-semibold items-center flex hover:border hover:border-[#1e1e1e]">COMENZAR PRUEBA</button>
       </a>
       <footer class="bg-[#F6D7EC] bottom-0 w-screen mt-20">
@@ -284,6 +284,14 @@
 <script>
 export default {
   name: 'a',
-  methods: {},
+  methods: {
+    googleNotify() {
+      console.log('googleNotify')
+      gtag('event', 'click', {
+        event_category: 'demo',
+        event_label: 'demo_click',
+      })
+    },
+  },
 }
 </script>

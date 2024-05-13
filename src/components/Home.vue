@@ -5,7 +5,7 @@
         <div class="flex justify-between items-center">
           <img src="/src/assets/olga_pin.png" alt="logo" class="w-24" />
           <router-link to="/demo">
-            <div class="border h-max px-4 rounded-full text-white flex py-1 cursor-pointer">
+            <div v-on:click="googleNotify" class="border h-max px-4 rounded-full text-white flex py-1 cursor-pointer">
               <a class="text-white text-xs sm:text-base" href="#demo">DEMO</a>
             </div>
           </router-link>
@@ -54,7 +54,15 @@
 import LandingContent from './LandingContent.vue'
 export default {
   name: 'App',
-  methods: {},
+  methods: {
+    googleNotify() {
+      console.log('googleNotify')
+      gtag('event', 'click', {
+        event_category: 'demo',
+        event_label: 'demo_click',
+      })
+    },
+  },
   components: {
     LandingContent,
   },
