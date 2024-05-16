@@ -2,9 +2,7 @@
   <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900 text-blue">
     <div class="md:flex mt-5">
       <div class="mb-6 mx-20">
-        <a href="#/" class="flex items-center">
-          <img src="../assets/olgalogo_pink.svg" class="h-8 mr-3" alt="Rendilo Logo" />
-        </a>
+        <a href="#/" class="flex items-center"> </a>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
