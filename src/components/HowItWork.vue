@@ -3,7 +3,7 @@
     <div class="container flex items-center justify-between mx-auto z-[1] relative">
       <div className="flex ml-auto sm:ml-0">
         <a href="/" class="flex items-center pr-20">
-          <img src="../assets/olgalogo_white.svg" class="h-12 mr-3" alt="Olga Logo" />
+          <img src="../assets/Rendilologo_white.svg" class="h-12 mr-3" alt="Rendilo Logo" />
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
@@ -52,7 +52,7 @@
         <div className="flex flex-col items-center text-center text-white">
           <p className="text-8xl font-bold">1</p>
           <p className="font-medium text-lg whitespace-nowrap py-4">Registrate y añade fondos</p>
-          <p className="text-sm font-regular">Una vez verificada tu empresa, añade fondos a tu cuenta en Olga desde tu cuenta de empresa.</p>
+          <p className="text-sm font-regular">Una vez verificada tu empresa, añade fondos a tu cuenta en Rendilo desde tu cuenta de empresa.</p>
         </div>
         <img src="../assets/arrow.svg" alt="->" />
         <div className="flex flex-col items-center text-center text-white">
@@ -65,7 +65,7 @@
           <p className="text-8xl font-bold">3</p>
           <p className="font-medium text-lg whitespace-nowrap py-4">Invita a tu equipo</p>
           <p className="text-sm font-regular whitespace-nowrap">
-            Con la aplicación de Olga, los <br />empleados pueden solicitar<br />
+            Con la aplicación de Rendilo, los <br />empleados pueden solicitar<br />
             fondos, pagar de manera segura<br />
             y presentar recibos de forma <br />fácil y rápida.
           </p>

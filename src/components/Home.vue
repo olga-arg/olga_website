@@ -3,7 +3,7 @@
     <div class="absolute h-screen bg-fixed w-screen" style="background-color: rgba(0, 0, 0, 0.1)">
       <header class="px-5 sm:px-10 pt-7 items-center">
         <div class="flex justify-between items-center">
-          <img src="/src/assets/olga_pin.png" alt="logo" class="w-24" />
+          <img src="/src/assets/rendilo_white.png" alt="logo" class="w-24" />
           <router-link to="/demo">
             <div v-on:click="googleNotify" class="border h-max px-4 rounded-full text-white flex py-1 cursor-pointer">
               <a class="text-white text-xs sm:text-base" href="#demo">DEMO</a>
