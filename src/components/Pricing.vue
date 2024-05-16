@@ -5,7 +5,7 @@
     <div class="container flex items-center justify-between mx-auto z-[1] relative">
       <div className="flex ml-auto sm:ml-0">
         <a href="/" class="flex items-center pr-20">
-          <img src="../assets/olgalogo_pink.svg" class="h-12 mr-3" alt="Olga Logo" />
+          <img src="../assets/Rendilologo_pink.svg" class="h-12 mr-3" alt="Rendilo Logo" />
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
@@ -69,7 +69,7 @@
           </div>
           <div className="flex mt-16 items-center mx-10">
             <img src="../assets/check_list.svg" className="mr-2" alt="Check" />
-            <p className="text-gray_hover">Tarjetas de empresa de Olga (físicas y virtuales)</p>
+            <p className="text-gray_hover">Tarjetas de empresa de Rendilo (físicas y virtuales)</p>
           </div>
           <div className="flex mt-2 mb-10 items-center mx-10">
             <img src="../assets/check_list.svg" className="mr-2" alt="Check" />
@@ -130,7 +130,7 @@
         <div className="bg-white w-full h-72 mb-20 rounded-xl grid grid-cols-3 text-gray_hover  items-center">
           <div className="flex">
             <img src="../assets/check_list.svg" className="mx-5" alt="Compatible" />
-            <p>Tarjetas de empresa de Olga (físicas y virtuales)</p>
+            <p>Tarjetas de empresa de Rendilo (físicas y virtuales)</p>
           </div>
           <div className="flex">
             <img src="../assets/check_list.svg" className="mx-5" alt="Compatible" />

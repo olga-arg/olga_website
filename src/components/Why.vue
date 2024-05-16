@@ -3,7 +3,7 @@
     <div class="container flex items-center justify-between mx-auto z-[1] relative">
       <div className="flex ml-auto sm:ml-0">
         <a href="/" class="flex items-center pr-20">
-          <img src="../assets/olgalogo_pink.svg" class="h-12 mr-3" alt="Olga Logo" />
+          <img src="../assets/Rendilologo_pink.svg" class="h-12 mr-3" alt="Rendilo Logo" />
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
@@ -55,7 +55,7 @@
         <div className="bg-pink rounded-md w-max px-20 py-10 flex flex-col justify-center">
           <div className="self-center">
             <p className="text-white font-light text-xl mb-4">
-              "Con Olga, la gestión de gastos es fácil y<br />
+              "Con Rendilo, la gestión de gastos es fácil y<br />
               agradable para todos los involucrados.<br />
               Ademas, es fácil de usar para todos, desde el<br />
               primer día."
@@ -102,14 +102,14 @@
       <div className="flex flex-col items-center">
         <div className="flex mx-24 h-20 mb-10 items-center">
           <img className="mr-8" src="../assets/him.svg" alt="him_profile" />
-          <p className="font-bold text-5xl">Por qué los <span className="text-pink">empleados</span> aman Olga</p>
+          <p className="font-bold text-5xl">Por qué los <span className="text-pink">empleados</span> aman Rendilo</p>
         </div>
         <div className="bg-pink rounded-md w-max px-20 py-10 flex flex-col justify-center">
           <div className="self-center">
             <p className="text-white font-light text-xl mb-4">
               "Nuestra app es muy práctica. Con la función<br />
               de tomar una foto de tus recibos al pagar<br />
-              con tu tarjeta Olga, la gestión de tus gastos<br />
+              con tu tarjeta Rendilo, la gestión de tus gastos<br />
               se vuelve más fácil y eficiente que nunca."
             </p>
             <div className="flex items-center">

@@ -7,7 +7,7 @@
       <div class="col-span-2 rounded-xl flex flex-col py-4 sm:pt-14 sm:pl-6 sm:w-96">
         <p class="text-sm font-semibold sm:font-normal text-[#6D7471]">PRIMERO</p>
         <p class="mb-4 text-2xl sm:text-2xl">Realiza un gasto</p>
-        <p class="text-lg">Sacale una foto al gasto, recibo o ticket directo desde la app movil de olga.</p>
+        <p class="text-lg">Sacale una foto al gasto, recibo o ticket directo desde la app movil de Rendilo.</p>
       </div>
       <div class="col-span-2 rounded-xl flex flex-col py-4 sm:pt-14 sm:pl-6 sm:w-96">
         <p class="text-sm font-semibold sm:font-normal text-[#6D7471]">SEGUNDO</p>
@@ -129,7 +129,7 @@
       <div class="bg-[#EFEFEF] rounded-lg flex flex-col items-center py-4">
         <a class="text-lg font-medium">Exporta tu contabilidad de manera fácil</a>
         <a class="text-xs w-96 px-7 mt-2 font-light text-center"
-          >Obtén una visión clara de tus finanzas y exporta tus datos a tus sistemas contables favoritos en pocos clics. Con Olga, podrás mantener tus finanzas bajo control.</a
+          >Obtén una visión clara de tus finanzas y exporta tus datos a tus sistemas contables favoritos en pocos clics. Con Rendilo, podrás mantener tus finanzas bajo control.</a
         >
         <img src="../assets/exp.png" alt="finance" class="mt-8 w-72 rounded-lg" />
       </div>
@@ -171,7 +171,7 @@
       <div class="flex justify-center relative">
         <a class="text-center text-xs sm:text-xl px-10 sm:px-0 py-14"
           >Alivia las tareas administrativas y obtén una visibilidad completa de los gastos de tu empresa.<br />
-          Con Olga, puedes automatizar y simplificar la gestión de gastos en solo 5 minutos.</a
+          Con Rendilo, puedes automatizar y simplificar la gestión de gastos en solo 5 minutos.</a
         >
       </div>
       <a href="#demo" v-on:click="googleNotify" class="self-center">
@@ -182,7 +182,7 @@
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
               <a href="/" class="flex items-center">
-                <span class="self-center text-[#1E1E1E] text-2xl font-semibold whitespace-nowrap">Olga</span>
+                <span class="self-center text-[#1E1E1E] text-2xl font-semibold whitespace-nowrap">Rendilo</span>
               </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -190,7 +190,7 @@
                 <h2 class="mb-6 text-sm font-semibold text-[#1E1E1E] uppercase">Resources</h2>
                 <ul class="text-gray-500 font-medium">
                   <li class="mb-4">
-                    <a href="/" class="hover:underline">Olga</a>
+                    <a href="/" class="hover:underline">Rendilo</a>
                   </li>
                   <li>
                     <a href="#demo" class="hover:underline">Contacto</a>
@@ -201,7 +201,7 @@
                 <h2 class="mb-6 text-sm font-semibold text-[#1E1E1E] uppercase">Follow us</h2>
                 <ul class="text-gray-500 font-medium">
                   <li class="mb-4">
-                    <a href="https://github.com/olga-arg/" class="hover:underline">Github</a>
+                    <a href="https://github.com/Rendilo-arg/" class="hover:underline">Github</a>
                   </li>
                   <li>
                     <a href="" class="hover:underline">Discord</a>
@@ -223,7 +223,7 @@
           </div>
           <hr class="my-6 border-[#1e1e1e] sm:mx-auto lg:my-8" />
           <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="/" class="hover:underline">Olga™</a>. Derechos Reservados. </span>
+            <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="/" class="hover:underline">Rendilo™</a>. Derechos Reservados. </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
               <a href="#" class="text-gray-500 hover:text-[#1E1E1E]">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
