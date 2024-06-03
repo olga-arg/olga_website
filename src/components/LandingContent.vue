@@ -271,7 +271,7 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span class="sr-only">Dribbble account</span>
+                <span class="sr-only font-seriguela font-medium">Dribbble account</span>
               </a>
             </div>
           </div>

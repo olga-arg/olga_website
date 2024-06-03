@@ -35,7 +35,10 @@
           />
           <div class="h-0.5 w-full bg-[#142C1D]"></div>
         </div>
-        <a v-on:click="onSubmit" class="transition hover:underline cursor-pointer sm:absolute bottom-0 right-0 sm:pr-8 pb-8 text-end text-6xl sm:text-8xl">SOLICITAR</a>
+        <a v-if="!send" v-on:click="onSubmit" class="transition hover:underline cursor-pointer sm:absolute bottom-0 right-0 sm:pr-8 pb-8 text-end text-6xl sm:text-8xl">
+          SOLICITAR
+        </a>
+        <a v-else class="transition hover:underline cursor-pointer sm:absolute bottom-0 right-0 sm:pr-8 pb-8 text-end text-6xl sm:text-8xl"> GRACIAS </a>
       </div>
     </div>
   </div>
@@ -80,6 +83,7 @@ export default {
       this.name = ''
       this.phone = ''
       this.company_email = ''
+      this.send = true
     },
   },
   components: {
@@ -94,6 +98,7 @@ export default {
       name: '',
       phone: '',
       company_email: '',
+      send: false,
     }
   },
 }
